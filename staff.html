@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPro group | staff</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+
+<body>
+   <nav>
+    <div class="logo">
+      <h2>iPro</h2>
+    </div>
+    <div class="menu"></div>
+    <div class="menu-list">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="staff.html" style="color: dodgerblue;
+  text-decoration: underline;">Staff</a></li>
+        <li><a href="register.html">Registration</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <div class="change-language">
+        <img src="icons8-uzbekistan-48.png" alt="uz" class="uz" onclick="changeLang(2)">
+        <img src="russia-flag-button-600w-476782600.webp" alt="ru" class="ru" onclick="changeLang(3)">
+        <img src="icons8-usa-48.png" alt="en" class="en" onclick="changeLang(1)">
+        </div>
+    </div>
+  </nav>
+  <div class="lds-ring"><div></div></div>
+  <header>
+    <div class="staff">
+      <div class="staff-cards" style="grid-area: bir">
+        <div class="staff-card">
+          <div class="staff-card-img">
+            <img src="nomsiz (1).jpeg" alt="">
+            <h3>John Doe</h3>
+            <p>Front end developer</p>
+          </div>
+          <div class="staff-card-more">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel sapien eget arcu lacinia fermentum. </p>
+            <button>Contact</button>
+            <button>Portfolio</button>
+            <div class="staff-socials">
+              <img src="icons8-telegram-94.png" alt="icons8-telegram-94.png">
+              <img src="icons8-facebook-96.png" alt="icons8-facebook-96.png">
+              <img src="icons8-youtube-96.png" alt="icons8-youtube-96.png">
+              <img src="icons8-instagram-94.png" alt="icons8-instagram-94.png">
+            </div>
+          </div>
+        </div>
+         <div class="staff-card" style="grid-area: ikki">
+          <div class="staff-card-img">
+            <img src="nomsiz (1).jpeg" alt="">
+            <h3>John Doe</h3>
+            <p>Front end developer</p>
+          </div>
+          <div class="staff-card-more">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel sapien eget arcu lacinia fermentum. </p>
+            <button>Contact</button>
+            <button>Portfolio</button>
+            <div class="staff-socials">
+              <img src="icons8-telegram-94.png" alt="icons8-telegram-94.png">
+              <img src="icons8-facebook-96.png" alt="icons8-facebook-96.png">
+              <img src="icons8-youtube-96.png" alt="icons8-youtube-96.png">
+              <img src="icons8-instagram-94.png" alt="icons8-instagram-94.png">
+            </div>
+          </div>
+        </div>
+       <div class="staff-card" style="grid-are: uch;">
+         <div class="staff-card-img">
+           <img src="nomsiz (1).jpeg" alt="">
+           <h3>John Doe</h3>
+           <p>Front end developer</p>
+         </div>
+         <div class="staff-card-more">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel sapien eget arcu lacinia fermentum.  </p>
+           <button>Contact</button>
+           <button>Portfolio</button>
+           <div class="staff-socials">
+             <img src="icons8-telegram-94.png" alt="icons8-telegram-94.png">
+             <img src="icons8-facebook-96.png" alt="icons8-facebook-96.png">
+             <img src="icons8-youtube-96.png" alt="icons8-youtube-96.png">
+             <img src="icons8-instagram-94.png" alt="icons8-instagram-94.png">
+           </div>
+         </div>
+       </div>
+      </div>
+    </div>
+  </header>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KpyV1H7zWUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <footer class="foot">
+    <p>iPro group </p>
+    <p>All rights reserved </p>
+    <p>26.07.2023</p>
+  </footer>
+  <script>
+    let menu = document.querySelector('.menu')
+let menuList = document.querySelector('.menu-list')
+
+menu.onClick = function()  {
+}
+menu.addEventListener('click',()=>{
+    menuList.classList.toggle('menu-plus')
+    menu.classList.toggle('menuIcon')
+})
+
+let loader  = document.querySelector ('.lds-ring')
+    window.onload = () => {
+      loader.style.display = 'none'
+    }
+        
+  </script>
+</body>
+
+</html>

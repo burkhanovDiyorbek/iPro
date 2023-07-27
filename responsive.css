@@ -1,0 +1,170 @@
+@media only screen and (max-width: 500px){
+  *{
+    transition: 0;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  .menu-list{
+    position: absolute;
+    z-index: 1000;
+    top: -400%;
+    transition: 0.4s all ease
+  }
+  
+  
+  
+  header{
+   height: 550px;
+  }
+ .home{
+    flex-direction: column;
+    font-size: 0.7em;
+    height: auto;
+    width: 100%;
+  }
+  header .home .homeText{
+     width: 90%;
+     padding-left: 30px;
+  }
+  .home-text p{
+    
+  }
+   .home-img{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    z-index: -1;
+    top: 190px;
+    right: 0;
+  }
+  footer{
+    display: block;
+    font-size: 0.7em;
+    text-align: center;
+    z-index: 10;
+  }
+  footer *{
+    margin-top: 10px;
+  }
+  .menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transition: 0.4s ease;
+  }
+  .menu:before{
+    
+    content: "";
+    width: 86%;
+    height: 2px;
+    background: dodgerblue;
+    box-shadow: 0  10px  0px dodgerblue;
+    position: absolute;
+    top: 10px;
+    margin: auto;
+  }
+  .menu:after{
+    content: "";
+    width: 86%;
+    height: 2px;
+    background: dodgerblue;
+    position: absolute;
+    bottom: 10px;
+  }
+  .menu-plus{
+    top: 65px;
+    background: #fff;
+    padding: 20px 0;
+    width: 100%;
+  }
+  .menu-plus *{
+    margin-top: 15px;
+  }
+  .menuIcon:before{
+    box-shadow: none;
+    transform: rotate(-135deg);
+    background: firebrick;
+    top: 25px;
+  }
+  .menuIcon:after{
+    transform: rotate(-45deg);
+    background: firebrick;
+  }
+  
+  /* login */
+  .login{
+    padding: 20px 0;
+  }
+  .login form{
+    width: 80%;
+    z-index: 10;
+
+    top: 90px;
+    left: 20px;
+  }
+  .login img{
+    width: 80%;
+    position: relative;
+    top: 10px;
+    right: -20px;
+    z-index: -1;
+  }
+  /* price */
+  .pricing-table{
+    flex-direction: column;
+  }
+  .pricing-option{
+    margin: 20px auto;
+  }
+  .foot{
+    height: auto;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+  }
+  .partners{
+    flex-direction: column;
+    width: 100%;
+    margin-top: 220px;
+    z-index: -1;
+  }
+  .partners img{
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .reg-box{
+    flex-direction: column;
+  }
+  .reg-box-left img{
+    width: 80%;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+  }
+  .staff-cards{
+    flex-direction: column;
+    width: 100%
+  }
+  .staff-card{
+    width: 80%;
+    margin: auto;
+    font-size: 0.7em;
+    height: 150px;
+    margin-top: 30px;
+  }
+  .staff-card:hover{
+    height: 250px;
+  }
+  .staff-socials img{
+    margin-left: 20px;
+    width: 19px;
+  }
+  .reg-box-right{
+    margin-top: 220px;
+    margin-left: -40px;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPro group | project</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h2>iPro</h2>
+    </div>
+        <div class="menu"></div>
+
+    <div class="menu-list">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="register.html">Registration</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+   
+    
+  </nav>
+  <div class="lds-ring"><div></div></div>
+  <header style="padding-bottom: 70px;">
+    
+  <div class="projects" >
+      <div>
+        <h2>Our partners:</h2>
+      </div> 
+      <div class="partners">
+        <img src="/nomsiz (1).png" alt="/nomsiz (1).png">
+        <img src="/nomsiz (2).png" alt="/nomsiz (1).png">
+        <img src="/nomsiz (3).png" alt="/nomsiz (1).png">
+        <img src="/nomsiz.png" alt="/nomsiz (1).png">
+      </div>
+    </div>
+      </header>
+
+    <footer class="foot">
+    <p>iPro group </p>
+    <p>All rights reserved </p>
+    <p>26.07.2023</p>
+  </footer>
+  
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KpyV1H7zWUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <script>
+      let loader  = document.querySelector ('.lds-ring')
+    window.onload = () => {
+      loader.style.display = 'none'
+    }
+      let menu = document.querySelector('.menu')
+let menuList = document.querySelector('.menu-list')
+
+menu.onClick = function()  {
+}
+menu.addEventListener('click',()=>{
+    menuList.classList.toggle('menu-plus')
+    menu.classList.toggle('menuIcon')
+})
+    </script>
+</body>
+
+</html>

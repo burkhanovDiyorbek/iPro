@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iPro group | registration</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <h2>iPro</h2>
+    </div>
+    <div class="menu"></div>
+    <div class="menu-list">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="social.html">Social</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="price.html">Price</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="register.html">Registration</a></li>
+        <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <div class="change-language">
+      <img src="icons8-uzbekistan-48.png" alt="uz" class="uz" onclick="changeLang(2)">
+      <img src="russia-flag-button-600w-476782600.webp" alt="ru" class="ru" onclick="changeLang(3)">
+      <img src="icons8-usa-48.png" alt="en" class="en" onclick="changeLang(1)">
+      </div>
+    </div>
+  </nav>
+  <div class="lds-ring"><div></div></div>
+  <header style="padding-bottom: 70px;">
+    <div class="reg-box">
+      <div class="reg-box-left">
+        <img src="asset-8.svg" alt="asset-8.svg">
+      </div>
+      <div class="reg-box-right">
+        <h2>Registration</h2>
+        <form action="">
+          <label>
+            <p>Your name:</p>
+            <input type="text" placeholder="your name...">
+          </label>
+          <label>
+            <p>Your surname:</p>
+            <input type="text" placeholder="your surname...">
+          </label>
+          <label>
+            <p>Your e-mail:</p>
+            <input type="email" placeholder="your email...">
+          </label>
+          <label>
+            <p>Your password:</p>
+            <input type="password" placeholder="your password...">
+          </label>
+          <label>
+            <p>Your phone:</p>
+            <input type="number" placeholder="your phone...">
+          </label>
+          <br>
+          <button type="submit">Register</button>
+        </form>
+        <p>Do you have an account? <a href="login.html">Login now</a></p>
+      </div>
+    </div>
+  </header >
+  <footer class="foot">
+    <p>iPro group </p>
+    <p>All rights reserved </p>
+    <p>26.07.2023</p>
+  </footer>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KpyV1H7zWUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <script>
+    let loader  = document.querySelector ('.lds-ring')
+    window.onload = () => {
+      loader.style.display = 'none'
+    }
+    let menu = document.querySelector('.menu')
+let menuList = document.querySelector('.menu-list')
+
+menu.onClick = function()  {
+}
+menu.addEventListener('click',()=>{
+    menuList.classList.toggle('menu-plus')
+    menu.classList.toggle('menuIcon')
+})
+  </script>
+</body>
+
+</html>
